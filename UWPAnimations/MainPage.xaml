@@ -285,224 +285,16 @@
         </Storyboard>
         <Storyboard x:Name="BackgroundAnimation"
                     RepeatBehavior="Forever">
-            <DoubleAnimation Duration="0:0:4"
-                             To="-90.5"
-                             Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
-                             Storyboard.TargetName="RectGroups"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0:0:4"
+            <DoubleAnimation Duration="0:0:2"
                              To="-90.5"
                              Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)"
                              Storyboard.TargetName="RectGroups"
                              d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle"
+            <DoubleAnimation Duration="0:0:2"
+                             To="-90.5"
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                             Storyboard.TargetName="RectGroups"
                              d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle1"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle2"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle3"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle4"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle5"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle6"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle7"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle8"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle9"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle10"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle11"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle12"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle13"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle14"
-                             d:IsOptimized="True" />
-            <DoubleAnimation Duration="0"
-                             To="32"
-                             Storyboard.TargetProperty="(FrameworkElement.Width)"
-                             Storyboard.TargetName="rectangle15"
-                             d:IsOptimized="True" />
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle1">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle2">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle3">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle4">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle5">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle6">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle7">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle8">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle9">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle10">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle11">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle12">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle13">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle14">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
-                                           Storyboard.TargetName="rectangle15">
-                <DiscreteObjectKeyFrame KeyTime="0">
-                    <DiscreteObjectKeyFrame.Value>
-                        <Thickness>16,0</Thickness>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
     </Page.Resources>
 
@@ -514,94 +306,77 @@
               Width="400"
               Background="#FFFF5050">
             <StackPanel x:Name="RectGroups"
-                        Orientation="Horizontal"
                         RenderTransformOrigin="0.5,0.5"
-                        Height="600"
                         HorizontalAlignment="Center"
-                        VerticalAlignment="Center">
+                        VerticalAlignment="Center"
+                        Width="600">
                 <StackPanel.RenderTransform>
-                    <CompositeTransform Rotation="45" />
+                    <CompositeTransform Rotation="-45" />
                 </StackPanel.RenderTransform>
-                <Rectangle x:Name="rectangle"
-                           StrokeThickness="2"
-                           Width="36"
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle1"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle2"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle3"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle4"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle5"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle6"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle7"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle8"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle9"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle10"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle11"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle12"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle13"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle14"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
-                <Rectangle x:Name="rectangle15"
-                           StrokeThickness="2"
-                           Width="36"
+                           Margin="0,16"
+                           Height="32" />
+                <Rectangle StrokeThickness="2"
                            Fill="#FFFF8787"
-                           Margin="18,0" />
+                           Margin="0,16"
+                           Height="32" />
             </StackPanel>
             <Ellipse x:Name="CircleBase"
                      Stroke="White"
