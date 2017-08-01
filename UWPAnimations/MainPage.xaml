@@ -1,13 +1,724 @@
-﻿<Page
-    x:Class="UWPAnimations.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:UWPAnimations"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+﻿<Page x:Class="UWPAnimations.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:UWPAnimations"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Storyboard x:Name="CircularWarningAnimation1"
+                    RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                                           Storyboard.TargetName="Circle1">
+                <EasingDoubleKeyFrame KeyTime="0"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                                           Storyboard.TargetName="Circle1">
+                <EasingDoubleKeyFrame KeyTime="0"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                           Storyboard.TargetName="Circle1">
+                <EasingDoubleKeyFrame KeyTime="0"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                                           Storyboard.TargetName="Circle2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                                           Storyboard.TargetName="Circle2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                           Storyboard.TargetName="Circle2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                                           Storyboard.TargetName="Circle3">
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                                           Storyboard.TargetName="Circle3">
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                           Storyboard.TargetName="Circle3">
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                                           Storyboard.TargetName="Circle4">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                                           Storyboard.TargetName="Circle4">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                           Storyboard.TargetName="Circle4">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5"
+                                      Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                                           Storyboard.TargetName="Circle5">
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:3"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                                           Storyboard.TargetName="Circle5">
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:3"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                           Storyboard.TargetName="Circle5">
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:3"
+                                      Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="CircularWarningAnimation2"
+                    RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                                           Storyboard.TargetName="Circle6">
+                <EasingDoubleKeyFrame KeyTime="0"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                                           Storyboard.TargetName="Circle6">
+                <EasingDoubleKeyFrame KeyTime="0"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                           Storyboard.TargetName="Circle6">
+                <EasingDoubleKeyFrame KeyTime="0"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                                           Storyboard.TargetName="Circle7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                                           Storyboard.TargetName="Circle7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                           Storyboard.TargetName="Circle7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                                           Storyboard.TargetName="Circle8">
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                                           Storyboard.TargetName="Circle8">
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                           Storyboard.TargetName="Circle8">
+                <EasingDoubleKeyFrame KeyTime="0:0:1"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                                           Storyboard.TargetName="Circle9">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                                           Storyboard.TargetName="Circle9">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                           Storyboard.TargetName="Circle9">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5"
+                                      Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)"
+                                           Storyboard.TargetName="Circle10">
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:3"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"
+                                           Storyboard.TargetName="Circle10">
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5"
+                                      Value="1.1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:3"
+                                      Value="1.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                           Storyboard.TargetName="Circle10">
+                <EasingDoubleKeyFrame KeyTime="0:0:2"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5"
+                                      Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:3"
+                                      Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="BackgroundAnimation"
+                    RepeatBehavior="Forever">
+            <DoubleAnimation Duration="0:0:4"
+                             To="-90.5"
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                             Storyboard.TargetName="RectGroups"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0:0:4"
+                             To="-90.5"
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)"
+                             Storyboard.TargetName="RectGroups"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle1"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle2"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle3"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle4"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle5"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle6"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle7"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle8"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle9"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle10"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle11"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle12"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle13"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle14"
+                             d:IsOptimized="True" />
+            <DoubleAnimation Duration="0"
+                             To="32"
+                             Storyboard.TargetProperty="(FrameworkElement.Width)"
+                             Storyboard.TargetName="rectangle15"
+                             d:IsOptimized="True" />
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle1">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle2">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle3">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle4">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle5">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle6">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle7">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle8">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle9">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle10">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle11">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle12">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle13">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle14">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)"
+                                           Storyboard.TargetName="rectangle15">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Thickness>16,0</Thickness>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+
+    <Grid Background="White">
+        <Grid x:Name="AnimationRoot"
+              HorizontalAlignment="Center"
+              Height="400"
+              VerticalAlignment="Center"
+              Width="400"
+              Background="#FFFF5050">
+            <StackPanel x:Name="RectGroups"
+                        Orientation="Horizontal"
+                        RenderTransformOrigin="0.5,0.5"
+                        Height="600"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                <StackPanel.RenderTransform>
+                    <CompositeTransform Rotation="45" />
+                </StackPanel.RenderTransform>
+                <Rectangle x:Name="rectangle"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle1"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle2"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle3"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle4"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle5"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle6"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle7"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle8"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle9"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle10"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle11"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle12"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle13"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle14"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+                <Rectangle x:Name="rectangle15"
+                           StrokeThickness="2"
+                           Width="36"
+                           Fill="#FFFF8787"
+                           Margin="18,0" />
+            </StackPanel>
+            <Ellipse x:Name="CircleBase"
+                     Stroke="White"
+                     StrokeThickness="4"
+                     Width="240"
+                     Height="240" />
+            <Ellipse x:Name="Circle1"
+                     Stroke="White"
+                     StrokeThickness="2"
+                     Width="240"
+                     Height="240"
+                     Margin="80"
+                     RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <CompositeTransform />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="Circle2"
+                     Stroke="White"
+                     StrokeThickness="2"
+                     Width="240"
+                     Height="240"
+                     Margin="80"
+                     RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <CompositeTransform />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="Circle3"
+                     Stroke="White"
+                     StrokeThickness="2"
+                     Width="240"
+                     Height="240"
+                     Margin="80"
+                     RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <CompositeTransform />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="Circle4"
+                     Stroke="White"
+                     StrokeThickness="2"
+                     Width="240"
+                     Height="240"
+                     Margin="80"
+                     RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <CompositeTransform />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="Circle5"
+                     Stroke="White"
+                     StrokeThickness="2"
+                     Width="240"
+                     Height="240"
+                     Margin="80"
+                     RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <CompositeTransform />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="Circle6"
+                     Stroke="White"
+                     StrokeThickness="2"
+                     Width="240"
+                     Height="240"
+                     Margin="80"
+                     RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <CompositeTransform />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="Circle7"
+                     Stroke="White"
+                     StrokeThickness="2"
+                     Width="240"
+                     Height="240"
+                     Margin="80"
+                     RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <CompositeTransform />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="Circle8"
+                     Stroke="White"
+                     StrokeThickness="2"
+                     Width="240"
+                     Height="240"
+                     Margin="80"
+                     RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <CompositeTransform />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="Circle9"
+                     Stroke="White"
+                     StrokeThickness="2"
+                     Width="240"
+                     Height="240"
+                     Margin="80"
+                     RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <CompositeTransform />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="Circle10"
+                     Stroke="White"
+                     StrokeThickness="2"
+                     Width="240"
+                     Height="240"
+                     Margin="80"
+                     RenderTransformOrigin="0.5,0.5">
+                <Ellipse.RenderTransform>
+                    <CompositeTransform />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+        </Grid>
 
     </Grid>
 </Page>
